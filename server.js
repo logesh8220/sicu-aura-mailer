@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.json());
 app.use(cors());
 
-// POST endpoint 
+
 app.post('/sendEmail', (req, res) => {
   const { to, subject, text, html, header } = req.body;
 
